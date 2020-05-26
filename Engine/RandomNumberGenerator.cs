@@ -8,7 +8,7 @@ namespace Engine
     public static class RandomNumberGenerator
     {
         //none deterministic version of RNG
-        private static readonly RNGCryptoServiceProvider _generator = new RandomNumberGenerator();
+        private static readonly RNGCryptoServiceProvider _generator = new RNGCryptoServiceProvider();
 
         public static int NumberBetween(int minimuValue, int maximumValue)
         {

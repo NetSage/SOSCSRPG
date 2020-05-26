@@ -15,6 +15,8 @@ namespace Engine.Factories
                 "there are rows of corn growing hre, with giant rats hiding between them", 
                 "E:\\CSharp Projects\\SOSCSRPG\\Engine\\Images\\Locations\\FarmFields.png");
 
+            newWorld.LocationAt(-2, -1).AddMonster(2, 100);
+
             newWorld.AddLocation(0, -1, "Home", "This is your Home",
                 "E:\\CSharp Projects\\SOSCSRPG\\Engine\\Images\\Locations\\Home.png");
 
@@ -38,6 +40,8 @@ namespace Engine.Factories
                 "The tress in this forest are covered with spider webs",
                 "E:\\CSharp Projects\\SOSCSRPG\\Engine\\Images\\Locations\\SpiderForest.png");
 
+            newWorld.LocationAt(2, 0).AddMonster(3, 100);
+
             newWorld.AddLocation(0, 1, "Herbalist's hut",
                 "You see a small hut, with plants drying from the roof.",
                 "E:\\CSharp Projects\\SOSCSRPG\\Engine\\Images\\Locations\\HerbalistsHut.png");
@@ -47,6 +51,8 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 2, "Herbalist's garden",
                 "There are many plants here, with stankes hdiing behind them",
                 "E:\\CSharp Projects\\SOSCSRPG\\Engine\\Images\\Locations\\sHerbalistsGarden.png");
+
+            newWorld.LocationAt(0, 2).AddMonster(1, 100);
 
             return newWorld;
         }
